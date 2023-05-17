@@ -12,4 +12,4 @@ Playthrough-Video: ! < 100MB!
 
 Use Markdown in this readme!
 
-Otherinfos: 
+Otherinfos: halllllllloooooo Mario BITTE LÖSCHEN
