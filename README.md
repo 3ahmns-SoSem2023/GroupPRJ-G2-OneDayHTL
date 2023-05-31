@@ -13,3 +13,23 @@ Playthrough-Video: ! < 100MB!
 Use Markdown in this readme!
 
 Otherinfos: 
+
+31.05.2023
+
+Tagesziele:
+  Jakob:
+	  Alle Zähler Grafiken
+	
+  Mathias:
+	  Sound für counts
+		  Geldcount rauf runter
+		  Lerncount rauf runter
+		  Energiecount rauf runter
+	  Hintergrundmusik
+  Mario:
+    2 Hintergründe
+
+  Henrik:
+ 	  Szenen erstellen & jeweilige Buttons erstellen
+  David:
+	  Countscript
