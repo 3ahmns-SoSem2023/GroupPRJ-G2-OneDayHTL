@@ -10,9 +10,10 @@ public class CountScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        geldCount = Random.Range(0, 10);
+        geldCount = Random.Range(1, 10);
         lernCount = Random.Range(0, 10);
         energyCount = Random.Range(50, 100);
+        PlayerPrefs.SetInt("geldCount", geldCount);
     }
 
     // Update is called once per frame
@@ -22,40 +23,53 @@ public class CountScript : MonoBehaviour
         {
             geldCount--;
             Debug.Log("Count zu hoch");
+            PlayerPrefs.SetInt("geldCount", geldCount);
         }
         if (energyCount > 100)
         {
             energyCount--;
             Debug.Log("Count zu hoch");
+            PlayerPrefs.SetInt("energyCount", energyCount);
         }
         if (lernCount > 10)
         {
             lernCount--;
             Debug.Log("Count zu hoch");
+            PlayerPrefs.SetInt("lernCount", lernCount);
         }
     }
     public void SchlafenKurz()
     {
         energyCount +=35;
         lernCount++;
+        PlayerPrefs.SetInt("lernCount", lernCount);
+        PlayerPrefs.SetInt("energyCount", energyCount);
     }
     public void SchlafenLang()
     {
         energyCount += 45;
         lernCount--;
+        PlayerPrefs.SetInt("lernCount", lernCount);
+        PlayerPrefs.SetInt("energyCount", energyCount);
     }
     public void Kaffe()
     {
         energyCount += 10;
         geldCount--;
+        PlayerPrefs.SetInt("energyCount", energyCount);
+        PlayerPrefs.SetInt("geldCount", geldCount);
     }
     public void Lernen()
     {
         geldCount++;
         energyCount -= 15;
+        PlayerPrefs.SetInt("energyCount", energyCount);
+        PlayerPrefs.SetInt("geldCount", geldCount);
     }
    public void JedeEntscheidung()
     {
         energyCount -= 10;
+        PlayerPrefs.SetInt("energyCount", energyCount);
     }
+    
 }
