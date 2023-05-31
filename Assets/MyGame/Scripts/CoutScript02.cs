@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CountScript : MonoBehaviour
+public class CoutScript02 : MonoBehaviour
 {
     private int geldCount; // geld Stand des Spielers
     private int energyCount; // energy count des Spielers
@@ -10,10 +10,10 @@ public class CountScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        geldCount = Random.Range(1, 10);
-        lernCount = Random.Range(0, 10);
-        energyCount = Random.Range(50, 100);
-        PlayerPrefs.SetInt("geldCount", geldCount);
+        geldCount = PlayerPrefs.GetInt("geldCount", 0); 
+        lernCount = PlayerPrefs.GetInt("lernCount", 0);
+        energyCount = PlayerPrefs.GetInt("energyCount", 0);
+        
     }
 
     // Update is called once per frame
@@ -40,7 +40,7 @@ public class CountScript : MonoBehaviour
     }
     public void SchlafenKurz()
     {
-        energyCount +=35;
+        energyCount += 35;
         lernCount++;
         PlayerPrefs.SetInt("lernCount", lernCount);
         PlayerPrefs.SetInt("energyCount", energyCount);
@@ -66,10 +66,10 @@ public class CountScript : MonoBehaviour
         PlayerPrefs.SetInt("energyCount", energyCount);
         PlayerPrefs.SetInt("geldCount", geldCount);
     }
-   public void JedeEntscheidung()
+    public void JedeEntscheidung()
     {
         energyCount -= 10;
         PlayerPrefs.SetInt("energyCount", energyCount);
     }
-    
+
 }
