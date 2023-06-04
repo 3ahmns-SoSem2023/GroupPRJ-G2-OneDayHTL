@@ -7,13 +7,18 @@ public class CoutScript02 : MonoBehaviour
     private int geldCount; // geld Stand des Spielers
     private int energyCount; // energy count des Spielers
     private int lernCount;  // lern count des Spielers
+    public LoadScene loadScene;
     // Start is called before the first frame update
     void Start()
     {
         geldCount = PlayerPrefs.GetInt("geldCount", 0); 
         lernCount = PlayerPrefs.GetInt("lernCount", 0);
         energyCount = PlayerPrefs.GetInt("energyCount", 0);
-        
+        loadScene = GetComponent<LoadScene>();
+        Debug.Log("Geld:" + geldCount);
+        Debug.Log("Lern:" + lernCount);
+        Debug.Log("Energie:" + energyCount);
+
     }
 
     // Update is called once per frame
@@ -70,6 +75,11 @@ public class CoutScript02 : MonoBehaviour
     {
         energyCount -= 10;
         PlayerPrefs.SetInt("energyCount", energyCount);
+        Invoke("LoadScene", 2.0f);
+    }
+    public void LoadScene()
+    {
+        loadScene.NewScene();
     }
 
 }
