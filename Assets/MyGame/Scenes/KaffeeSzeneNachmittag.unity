@@ -216,6 +216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 749585982}
   - component: {fileID: 749585981}
+  - component: {fileID: 749585983}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -235,6 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b8e3f4b65ea634f97e492c388bb6fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadScene: {fileID: 0}
 --- !u!4 &749585982
 Transform:
   m_ObjectHideFlags: 0
@@ -249,6 +251,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &749585983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749585980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 583a430da15e08c4cae94cf293dbf401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScene:
+    m_Handle: 0
+  schlafSzene:
+    m_Handle: 0
+  kaffeSzeneVormittag:
+    m_Handle: 0
+  kaffeSzeneNachmittag:
+    m_Handle: 0
+  lernSzene:
+    m_Handle: 0
+  schularbeitSzene:
+    m_Handle: 0
+  daycount: 0
 --- !u!1 &788735265
 GameObject:
   m_ObjectHideFlags: 0
