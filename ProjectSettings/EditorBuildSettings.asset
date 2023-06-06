@@ -8,4 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MyGame/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/MyGame/Scenes/SchlafSzene.unity
+    guid: 79614fc63f645e34ba303fb447a60567
+  - enabled: 1
+    path: Assets/MyGame/Scenes/KaffeeSzeneVormittag 1.unity
+    guid: 7629034a757b7b8468ff0ad2e308f304
+  - enabled: 1
+    path: Assets/MyGame/Scenes/KaffeeSzeneNachmittag.unity
+    guid: fd88dbfb92476334ab50741c57a1b70b
+  - enabled: 1
+    path: Assets/MyGame/Scenes/LernSzene.unity
+    guid: 35b057d69041bc84680df6a89704dbdc
+  - enabled: 1
+    path: Assets/MyGame/Scenes/SchularbeitenSzene.unity
+    guid: 55846ce9c2ae02147b2e87a276a303cb
   m_configObjects: {}

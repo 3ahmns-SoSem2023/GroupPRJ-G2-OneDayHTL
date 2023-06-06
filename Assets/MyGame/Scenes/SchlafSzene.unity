@@ -218,6 +218,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 226931429}
+        m_TargetAssemblyTypeName: CountScript, Assembly-CSharp
+        m_MethodName: JedeEntscheidung
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &102742698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,6 +357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 226931428}
   - component: {fileID: 226931429}
+  - component: {fileID: 226931430}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -378,6 +391,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c023e45ed6c304ebafb72847de6740, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadScene: {fileID: 0}
+--- !u!114 &226931430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226931427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 583a430da15e08c4cae94cf293dbf401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScene:
+    m_Handle: 0
+  daycount: 0
 --- !u!1 &460653358
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,6 +819,18 @@ MonoBehaviour:
       - m_Target: {fileID: 226931429}
         m_TargetAssemblyTypeName: CountScript, Assembly-CSharp
         m_MethodName: SchlafenLang
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 226931429}
+        m_TargetAssemblyTypeName: CountScript, Assembly-CSharp
+        m_MethodName: JedeEntscheidung
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

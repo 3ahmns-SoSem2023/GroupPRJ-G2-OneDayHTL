@@ -7,6 +7,7 @@ public class CountScript : MonoBehaviour
     private int geldCount; // geld Stand des Spielers
     private int energyCount; // energy count des Spielers
     private int lernCount;  // lern count des Spielers
+    public LoadScene loadScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,10 @@ public class CountScript : MonoBehaviour
         lernCount = Random.Range(0, 10);
         energyCount = Random.Range(50, 100);
         PlayerPrefs.SetInt("geldCount", geldCount);
+        loadScene = GetComponent<LoadScene>();
+        Debug.Log("Geld:" + geldCount);
+        Debug.Log("Lern:" + lernCount);
+        Debug.Log("Energie:" + energyCount);
     }
 
     // Update is called once per frame
@@ -66,10 +71,16 @@ public class CountScript : MonoBehaviour
         PlayerPrefs.SetInt("energyCount", energyCount);
         PlayerPrefs.SetInt("geldCount", geldCount);
     }
-   public void JedeEntscheidung()
+    public void JedeEntscheidung()
     {
         energyCount -= 10;
         PlayerPrefs.SetInt("energyCount", energyCount);
+        Invoke("LoadScene", 2.0f);
+
     }
-    
+    public void LoadScene()
+    {
+        loadScene.NewScene();
+    }
+
 }
