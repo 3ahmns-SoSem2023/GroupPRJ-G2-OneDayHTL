@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LoadScene : MonoBehaviour
 {
     public Scene currentScene;
-    public int daycount;
+    public int daycount = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +16,8 @@ public class LoadScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentScene = SceneManager.GetActiveScene(); 
+        currentScene = SceneManager.GetActiveScene();
+        daycount = PlayerPrefs.GetInt("daycount", 0);
     }
     public void NewScene()
     {
@@ -42,12 +43,13 @@ public class LoadScene : MonoBehaviour
                 SceneManager.LoadScene("SchlafSzene", LoadSceneMode.Single);
                 
                 daycount++;
+                PlayerPrefs.SetInt("daycount", daycount);
             }
         }
        
         if (daycount>=4)
         {
-            SceneManager.LoadScene("SchularbeitenSzene", LoadSceneMode.Additive);
+            SceneManager.LoadScene("SchularbeitenSzene", LoadSceneMode.Single);
         }
     }
 }

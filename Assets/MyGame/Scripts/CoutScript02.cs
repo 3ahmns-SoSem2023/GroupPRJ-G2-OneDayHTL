@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class CoutScript02 : MonoBehaviour
 {
-    private int geldCount; // geld Stand des Spielers
-    private int energyCount; // energy count des Spielers
-    private int lernCount;  // lern count des Spielers
+    public int geldCount; // geld Stand des Spielers
+    public int energyCount; // energy count des Spielers
+    public int lernCount;  // lern count des Spielers
     public LoadScene loadScene;
     // Start is called before the first frame update
     void Start()
