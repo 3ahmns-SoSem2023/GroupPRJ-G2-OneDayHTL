@@ -748,7 +748,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b8e3f4b65ea634f97e492c388bb6fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  geldCount: 0
+  energyCount: 0
+  lernCount: 0
   loadScene: {fileID: 0}
+  yes: {fileID: 614531283}
+  no: {fileID: 691404901}
 --- !u!4 &845752411
 Transform:
   m_ObjectHideFlags: 0
@@ -776,16 +781,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentScene:
-    m_Handle: 0
-  schlafSzene:
-    m_Handle: 0
-  kaffeSzeneVormittag:
-    m_Handle: 0
-  kaffeSzeneNachmittag:
-    m_Handle: 0
-  lernSzene:
-    m_Handle: 0
-  schularbeitSzene:
     m_Handle: 0
   daycount: 0
 --- !u!1 &1342233011

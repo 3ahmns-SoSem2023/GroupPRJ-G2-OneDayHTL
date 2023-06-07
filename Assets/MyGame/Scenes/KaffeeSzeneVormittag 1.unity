@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 994207118}
   - component: {fileID: 994207117}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: No
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -551,7 +551,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b8e3f4b65ea634f97e492c388bb6fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  geldCount: 0
+  energyCount: 0
+  lernCount: 0
   loadScene: {fileID: 0}
+  yes: {fileID: 1730605293}
+  no: {fileID: 994207117}
 --- !u!4 &1320629184
 Transform:
   m_ObjectHideFlags: 0
@@ -579,16 +584,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentScene:
-    m_Handle: 0
-  schlafSzene:
-    m_Handle: 0
-  kaffeSzeneVormittag:
-    m_Handle: 0
-  kaffeSzeneNachmittag:
-    m_Handle: 0
-  lernSzene:
-    m_Handle: 0
-  schularbeitSzene:
     m_Handle: 0
   daycount: 0
 --- !u!1 &1386595230
@@ -764,7 +759,7 @@ GameObject:
   - component: {fileID: 1730605294}
   - component: {fileID: 1730605293}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Yes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

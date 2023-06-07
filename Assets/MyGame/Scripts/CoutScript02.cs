@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CoutScript02 : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class CoutScript02 : MonoBehaviour
     public int energyCount; // energy count des Spielers
     public int lernCount;  // lern count des Spielers
     public LoadScene loadScene;
+    public Button yes,no;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -76,6 +79,9 @@ public class CoutScript02 : MonoBehaviour
         energyCount -= 10;
         PlayerPrefs.SetInt("energyCount", energyCount);
         Invoke("LoadScene", 2.0f);
+        Debug.Log("++++++++++++++++++++++++++++++++++++"+gameObject.name);
+        yes.interactable = false;
+        no.interactable = false;
     }
     public void LoadScene()
     {

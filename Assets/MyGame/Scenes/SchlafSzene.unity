@@ -395,6 +395,8 @@ MonoBehaviour:
   energyCount: 0
   lernCount: 0
   loadScene: {fileID: 0}
+  yes: {fileID: 1448685391}
+  no: {fileID: 102742697}
 --- !u!114 &226931430
 MonoBehaviour:
   m_ObjectHideFlags: 0
