@@ -9,7 +9,7 @@ public class CountScript : MonoBehaviour
     private int energyCount; // energy count des Spielers
     private int lernCount;  // lern count des Spielers
     public LoadScene loadScene;
-    public Image[] lerncount;
+    public Sprite[] lerncount;
     // Start is called before the first frame update
     void Start()
     {
