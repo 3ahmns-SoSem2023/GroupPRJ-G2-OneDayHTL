@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 27454427}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1818705426}
+        m_TargetAssemblyTypeName: Noten, Assembly-CSharp
+        m_MethodName: Abgeben
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &27454427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -510,7 +522,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1116443152
 RectTransform:
   m_ObjectHideFlags: 0
@@ -668,7 +680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1706983703
 RectTransform:
   m_ObjectHideFlags: 0
@@ -765,6 +777,7 @@ MonoBehaviour:
   notenZahl: 0
   countScript02: {fileID: 0}
   abgeben: {fileID: 27454426}
+  abfrageAbgeben: 0
 --- !u!114 &1818705427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -781,6 +794,8 @@ MonoBehaviour:
   energyCount: 0
   lernCount: 0
   loadScene: {fileID: 0}
+  yes: {fileID: 0}
+  no: {fileID: 0}
 --- !u!4 &1818705428
 Transform:
   m_ObjectHideFlags: 0

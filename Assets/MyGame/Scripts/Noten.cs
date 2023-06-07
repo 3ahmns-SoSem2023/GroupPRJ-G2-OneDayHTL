@@ -10,6 +10,7 @@ public class Noten : MonoBehaviour
     public int notenZahl;
     public CoutScript02 countScript02;
     public Button abgeben;
+    public bool abfrageAbgeben;
 
     // Start is called before the first frame update
     void Start()
@@ -53,7 +54,7 @@ public class Noten : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Abgeben() == true)
+        if (abfrageAbgeben == true)
         {
             if (notenZahl <= 4)
             {
@@ -67,10 +68,11 @@ public class Noten : MonoBehaviour
         }
     }
 
-    public bool Abgeben()
+    public void Abgeben()
     {
-        bool abgegeben = true;
-        return abgegeben;
+        abfrageAbgeben = true;
         abgeben.gameObject.SetActive(false);
+        glueckwunschText.gameObject.SetActive(true);
+        note.gameObject.SetActive(true);
     }
 }
