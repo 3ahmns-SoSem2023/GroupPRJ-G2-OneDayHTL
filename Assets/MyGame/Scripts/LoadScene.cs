@@ -21,7 +21,7 @@ public class LoadScene : MonoBehaviour
     }
     public void NewScene()
     {
-        if (daycount < 3)
+        if (daycount < 4)
         {
             if (currentScene.name == "SchlafSzene")
             {
