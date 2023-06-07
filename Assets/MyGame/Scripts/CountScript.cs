@@ -17,6 +17,8 @@ public class CountScript : MonoBehaviour
         lernCount = Random.Range(0, 10);
         energyCount = Random.Range(50, 100);
         PlayerPrefs.SetInt("geldCount", geldCount);
+        PlayerPrefs.SetInt("energyCount", energyCount);
+        PlayerPrefs.SetInt("lernCount", lernCount);
         loadScene = GetComponent<LoadScene>();
         Debug.Log("Geld:" + geldCount);
         Debug.Log("Lern:" + lernCount);
