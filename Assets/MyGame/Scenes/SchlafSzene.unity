@@ -207,8 +207,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 226931429}
-        m_TargetAssemblyTypeName: CountScript, Assembly-CSharp
-        m_MethodName: SchlafenKurz
+        m_TargetAssemblyTypeName: CoutScript02, Assembly-CSharp
+        m_MethodName: JedeEntscheidung
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -219,8 +219,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 226931429}
-        m_TargetAssemblyTypeName: CountScript, Assembly-CSharp
-        m_MethodName: JedeEntscheidung
+        m_TargetAssemblyTypeName: CoutScript02, Assembly-CSharp
+        m_MethodName: SchlafenKurz
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -356,8 +356,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 226931428}
-  - component: {fileID: 226931429}
   - component: {fileID: 226931430}
+  - component: {fileID: 226931429}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -388,9 +388,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 226931427}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5c023e45ed6c304ebafb72847de6740, type: 3}
+  m_Script: {fileID: 11500000, guid: 49b8e3f4b65ea634f97e492c388bb6fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  geldCount: 0
+  energyCount: 0
+  lernCount: 0
   loadScene: {fileID: 0}
 --- !u!114 &226931430
 MonoBehaviour:
@@ -817,7 +820,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 226931429}
-        m_TargetAssemblyTypeName: CountScript, Assembly-CSharp
+        m_TargetAssemblyTypeName: CoutScript02, Assembly-CSharp
         m_MethodName: SchlafenLang
         m_Mode: 1
         m_Arguments:
@@ -829,7 +832,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 226931429}
-        m_TargetAssemblyTypeName: CountScript, Assembly-CSharp
+        m_TargetAssemblyTypeName: CoutScript02, Assembly-CSharp
         m_MethodName: JedeEntscheidung
         m_Mode: 1
         m_Arguments:
