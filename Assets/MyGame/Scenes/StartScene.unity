@@ -1193,18 +1193,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadScene: {fileID: 0}
-  lerncount:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  lerncountPNG:
+  - {fileID: 537080088}
+  - {fileID: 1442818795}
+  - {fileID: 2103775490}
+  - {fileID: 1511117481}
+  - {fileID: 1087858738}
+  - {fileID: 1374779589}
+  - {fileID: 1643299170}
+  - {fileID: 590896861}
+  - {fileID: 842735573}
+  - {fileID: 1250706169}
+  - {fileID: 88471107}
 --- !u!1 &2103775490
 GameObject:
   m_ObjectHideFlags: 0
