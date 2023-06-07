@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CoutScript02 : MonoBehaviour
 {
+    public GameObject[] lerncountPNG;
     public int geldCount; // geld Stand des Spielers
     public int energyCount; // energy count des Spielers
     public int lernCount;  // lern count des Spielers
@@ -14,6 +15,7 @@ public class CoutScript02 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         geldCount = PlayerPrefs.GetInt("geldCount", 0); 
         lernCount = PlayerPrefs.GetInt("lernCount", 0);
         energyCount = PlayerPrefs.GetInt("energyCount", 0);
@@ -44,6 +46,171 @@ public class CoutScript02 : MonoBehaviour
             lernCount--;
             Debug.Log("Count zu hoch");
             PlayerPrefs.SetInt("lernCount", lernCount);
+        }
+        if (lernCount == 0)
+        {
+            lerncountPNG[0].gameObject.SetActive(true);
+            lerncountPNG[1].gameObject.SetActive(false);
+            lerncountPNG[2].gameObject.SetActive(false);
+            lerncountPNG[3].gameObject.SetActive(false);
+            lerncountPNG[4].gameObject.SetActive(false);
+            lerncountPNG[5].gameObject.SetActive(false);
+            lerncountPNG[6].gameObject.SetActive(false);
+            lerncountPNG[7].gameObject.SetActive(false);
+            lerncountPNG[8].gameObject.SetActive(false);
+            lerncountPNG[9].gameObject.SetActive(false);
+            lerncountPNG[10].gameObject.SetActive(false);
+
+        }
+        if (lernCount == 1)
+        {
+            lerncountPNG[1].gameObject.SetActive(true);
+            lerncountPNG[0].gameObject.SetActive(false);
+            lerncountPNG[2].gameObject.SetActive(false);
+            lerncountPNG[3].gameObject.SetActive(false);
+            lerncountPNG[4].gameObject.SetActive(false);
+            lerncountPNG[5].gameObject.SetActive(false);
+            lerncountPNG[6].gameObject.SetActive(false);
+            lerncountPNG[7].gameObject.SetActive(false);
+            lerncountPNG[8].gameObject.SetActive(false);
+            lerncountPNG[9].gameObject.SetActive(false);
+            lerncountPNG[10].gameObject.SetActive(false);
+
+        }
+        if (lernCount == 2)
+        {
+            lerncountPNG[2].gameObject.SetActive(true);
+            lerncountPNG[1].gameObject.SetActive(false);
+            lerncountPNG[0].gameObject.SetActive(false);
+            lerncountPNG[3].gameObject.SetActive(false);
+            lerncountPNG[4].gameObject.SetActive(false);
+            lerncountPNG[5].gameObject.SetActive(false);
+            lerncountPNG[6].gameObject.SetActive(false);
+            lerncountPNG[7].gameObject.SetActive(false);
+            lerncountPNG[8].gameObject.SetActive(false);
+            lerncountPNG[9].gameObject.SetActive(false);
+            lerncountPNG[10].gameObject.SetActive(false);
+
+        }
+        if (lernCount == 3)
+        {
+            lerncountPNG[3].gameObject.SetActive(true);
+            lerncountPNG[1].gameObject.SetActive(false);
+            lerncountPNG[2].gameObject.SetActive(false);
+            lerncountPNG[0].gameObject.SetActive(false);
+            lerncountPNG[4].gameObject.SetActive(false);
+            lerncountPNG[5].gameObject.SetActive(false);
+            lerncountPNG[6].gameObject.SetActive(false);
+            lerncountPNG[7].gameObject.SetActive(false);
+            lerncountPNG[8].gameObject.SetActive(false);
+            lerncountPNG[9].gameObject.SetActive(false);
+            lerncountPNG[10].gameObject.SetActive(false);
+
+        }
+        if (lernCount == 4)
+        {
+            lerncountPNG[4].gameObject.SetActive(true);
+            lerncountPNG[1].gameObject.SetActive(false);
+            lerncountPNG[2].gameObject.SetActive(false);
+            lerncountPNG[3].gameObject.SetActive(false);
+            lerncountPNG[0].gameObject.SetActive(false);
+            lerncountPNG[5].gameObject.SetActive(false);
+            lerncountPNG[6].gameObject.SetActive(false);
+            lerncountPNG[7].gameObject.SetActive(false);
+            lerncountPNG[8].gameObject.SetActive(false);
+            lerncountPNG[9].gameObject.SetActive(false);
+            lerncountPNG[10].gameObject.SetActive(false);
+
+        }
+        if (lernCount == 5)
+        {
+            lerncountPNG[5].gameObject.SetActive(true);
+            lerncountPNG[1].gameObject.SetActive(false);
+            lerncountPNG[2].gameObject.SetActive(false);
+            lerncountPNG[3].gameObject.SetActive(false);
+            lerncountPNG[4].gameObject.SetActive(false);
+            lerncountPNG[0].gameObject.SetActive(false);
+            lerncountPNG[6].gameObject.SetActive(false);
+            lerncountPNG[7].gameObject.SetActive(false);
+            lerncountPNG[8].gameObject.SetActive(false);
+            lerncountPNG[9].gameObject.SetActive(false);
+            lerncountPNG[10].gameObject.SetActive(false);
+
+        }
+        if (lernCount == 6)
+        {
+            lerncountPNG[6].gameObject.SetActive(true);
+            lerncountPNG[1].gameObject.SetActive(false);
+            lerncountPNG[2].gameObject.SetActive(false);
+            lerncountPNG[3].gameObject.SetActive(false);
+            lerncountPNG[4].gameObject.SetActive(false);
+            lerncountPNG[5].gameObject.SetActive(false);
+            lerncountPNG[0].gameObject.SetActive(false);
+            lerncountPNG[7].gameObject.SetActive(false);
+            lerncountPNG[8].gameObject.SetActive(false);
+            lerncountPNG[9].gameObject.SetActive(false);
+            lerncountPNG[10].gameObject.SetActive(false);
+
+        }
+        if (lernCount == 7)
+        {
+            lerncountPNG[7].gameObject.SetActive(true);
+            lerncountPNG[1].gameObject.SetActive(false);
+            lerncountPNG[2].gameObject.SetActive(false);
+            lerncountPNG[3].gameObject.SetActive(false);
+            lerncountPNG[4].gameObject.SetActive(false);
+            lerncountPNG[5].gameObject.SetActive(false);
+            lerncountPNG[6].gameObject.SetActive(false);
+            lerncountPNG[0].gameObject.SetActive(false);
+            lerncountPNG[8].gameObject.SetActive(false);
+            lerncountPNG[9].gameObject.SetActive(false);
+            lerncountPNG[10].gameObject.SetActive(false);
+
+        }
+        if (lernCount == 8)
+        {
+            lerncountPNG[8].gameObject.SetActive(true);
+            lerncountPNG[1].gameObject.SetActive(false);
+            lerncountPNG[2].gameObject.SetActive(false);
+            lerncountPNG[3].gameObject.SetActive(false);
+            lerncountPNG[4].gameObject.SetActive(false);
+            lerncountPNG[5].gameObject.SetActive(false);
+            lerncountPNG[6].gameObject.SetActive(false);
+            lerncountPNG[7].gameObject.SetActive(false);
+            lerncountPNG[0].gameObject.SetActive(false);
+            lerncountPNG[9].gameObject.SetActive(false);
+            lerncountPNG[10].gameObject.SetActive(false);
+
+        }
+        if (lernCount == 9)
+        {
+            lerncountPNG[9].gameObject.SetActive(true);
+            lerncountPNG[1].gameObject.SetActive(false);
+            lerncountPNG[2].gameObject.SetActive(false);
+            lerncountPNG[3].gameObject.SetActive(false);
+            lerncountPNG[4].gameObject.SetActive(false);
+            lerncountPNG[5].gameObject.SetActive(false);
+            lerncountPNG[6].gameObject.SetActive(false);
+            lerncountPNG[7].gameObject.SetActive(false);
+            lerncountPNG[8].gameObject.SetActive(false);
+            lerncountPNG[0].gameObject.SetActive(false);
+            lerncountPNG[10].gameObject.SetActive(false);
+
+        }
+        if (lernCount == 10)
+        {
+            lerncountPNG[10].gameObject.SetActive(true);
+            lerncountPNG[1].gameObject.SetActive(false);
+            lerncountPNG[2].gameObject.SetActive(false);
+            lerncountPNG[3].gameObject.SetActive(false);
+            lerncountPNG[4].gameObject.SetActive(false);
+            lerncountPNG[5].gameObject.SetActive(false);
+            lerncountPNG[6].gameObject.SetActive(false);
+            lerncountPNG[7].gameObject.SetActive(false);
+            lerncountPNG[8].gameObject.SetActive(false);
+            lerncountPNG[9].gameObject.SetActive(false);
+            lerncountPNG[0].gameObject.SetActive(false);
+
         }
     }
     public void SchlafenKurz()
