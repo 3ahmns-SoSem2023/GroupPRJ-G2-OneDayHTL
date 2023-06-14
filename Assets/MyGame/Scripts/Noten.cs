@@ -58,7 +58,7 @@ public class Noten : MonoBehaviour
         {
             if (notenZahl <= 4)
             {
-                glueckwunschText.text = "Gratuliere du hast die Prüfung bestanden, deine Note ist: ";
+                glueckwunschText.text = "Gratuliere du hast die Prüfung bestanden, deine Note ist: " + notenZahl;
             }
 
             else
