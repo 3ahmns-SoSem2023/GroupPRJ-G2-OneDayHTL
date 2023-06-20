@@ -1784,6 +1784,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1354485514}
+  - component: {fileID: 1354485515}
   m_Layer: 0
   m_Name: EnergieCount
   m_TagString: Untagged
@@ -1826,6 +1827,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1354485515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354485513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54058cf2bf4b08d46ac567422f12c6c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1367449122
 GameObject:
   m_ObjectHideFlags: 0
@@ -2699,7 +2712,27 @@ MonoBehaviour:
   - {fileID: 674349188}
   - {fileID: 830407914}
   - {fileID: 1851741243}
-  energycountPNG: []
+  energycountPNG:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1851741243
 GameObject:
   m_ObjectHideFlags: 0
@@ -3638,6 +3671,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2095856457}
+  - component: {fileID: 2095856458}
   m_Layer: 0
   m_Name: Lerncount
   m_TagString: Untagged
@@ -3670,6 +3704,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2095856458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095856456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e63bc0428c00ea147b509f94bcca3015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2102822582
 GameObject:
   m_ObjectHideFlags: 0
