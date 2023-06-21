@@ -4609,7 +4609,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2110694853}
-  - component: {fileID: 2110694852}
   m_Layer: 0
   m_Name: EnergieCount
   m_TagString: Untagged
@@ -4617,18 +4616,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2110694852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110694851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54058cf2bf4b08d46ac567422f12c6c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &2110694853
 Transform:
   m_ObjectHideFlags: 0

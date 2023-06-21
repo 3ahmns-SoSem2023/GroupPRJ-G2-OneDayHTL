@@ -209,7 +209,7 @@ public class CountScript : MonoBehaviour
             energycountPNG[19].gameObject.SetActive(true);
 
         }
-        if (energyCount < 100 && energyCount >= 95)
+        if (energyCount >= 95)
         {
 
             energycountPNG[20].gameObject.SetActive(true);

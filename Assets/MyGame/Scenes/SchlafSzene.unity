@@ -578,17 +578,17 @@ MonoBehaviour:
   - {fileID: 912988600}
   - {fileID: 349743138}
   lerncountPNG:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 727191610}
+  - {fileID: 399006933}
+  - {fileID: 1161891432}
+  - {fileID: 1723354193}
+  - {fileID: 2057684362}
+  - {fileID: 1363429997}
+  - {fileID: 241790986}
+  - {fileID: 1987401788}
+  - {fileID: 741182486}
+  - {fileID: 1633889786}
+  - {fileID: 1560228921}
   geldCountPNG:
   - {fileID: 2091278781}
   - {fileID: 2091278781}
@@ -1551,7 +1551,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 751309662}
-  - component: {fileID: 751309661}
   m_Layer: 0
   m_Name: EnergieCount
   m_TagString: Untagged
@@ -1559,18 +1558,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &751309661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751309660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54058cf2bf4b08d46ac567422f12c6c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &751309662
 Transform:
   m_ObjectHideFlags: 0
@@ -4401,7 +4388,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1999017671}
-  - component: {fileID: 1999017670}
   m_Layer: 0
   m_Name: Lerncount
   m_TagString: Untagged
@@ -4409,18 +4395,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1999017670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1999017669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e63bc0428c00ea147b509f94bcca3015, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1999017671
 Transform:
   m_ObjectHideFlags: 0
