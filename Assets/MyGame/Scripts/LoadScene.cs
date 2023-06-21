@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LoadScene : MonoBehaviour
 {
     public Scene currentScene;
     public int daycount = 0;
+    public Text dayText; 
     // Start is called before the first frame update
     void Start()
     {
-       
+        dayText.text = "Tag: " + daycount;
     }
 
     // Update is called once per frame
