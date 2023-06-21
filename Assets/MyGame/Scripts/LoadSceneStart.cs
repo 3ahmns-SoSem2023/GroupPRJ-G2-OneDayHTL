@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LoadSceneStart : MonoBehaviour
 {
     public Scene currentScene;
-    public int daycount = 0;
+    public int daycount = 1;
+    public Text dayText;
     // Start is called before the first frame update
     void Start()
     {
-        daycount = 0;
+        daycount = 1;
         PlayerPrefs.SetInt("daycount", daycount);
+        dayText.text = "Tag: " + daycount;
     }
 
     // Update is called once per frame
@@ -22,7 +25,7 @@ public class LoadSceneStart : MonoBehaviour
     }
     public void NewScene()
     {
-        if (daycount < 4)
+        if (daycount < 5)
         {
             if (currentScene.name == "StartScene")
             {
