@@ -7,11 +7,12 @@ using UnityEngine.UI;
 public class LoadScene : MonoBehaviour
 {
     public Scene currentScene;
-    public int daycount = 0;
+    public int daycount;
     public Text dayText; 
     // Start is called before the first frame update
     void Start()
     {
+        daycount = PlayerPrefs.GetInt("daycount", 1);
         dayText.text = "Tag: " + daycount;
     }
 
