@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class CountScript : MonoBehaviour
 {
+    public GameObject[] geldCountPNG;
+    
     private int geldCount; // geld Stand des Spielers
     private int energyCount; // energy count des Spielers
     private int lernCount;  // lern count des Spielers
@@ -14,6 +16,8 @@ public class CountScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+        
         geldCount = Random.Range(1, 10);
         lernCount = Random.Range(0, 10);
         energyCount = Random.Range(50, 100);
@@ -47,353 +51,9 @@ public class CountScript : MonoBehaviour
             Debug.Log("Count zu hoch");
             PlayerPrefs.SetInt("lernCount", lernCount);
         }
-        if (energyCount < 5)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);  
-            }
-            energycountPNG[0].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 10 && energyCount >= 5)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[1].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 15 && energyCount >= 10)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[2].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 20 && energyCount >= 15)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[3].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 25 && energyCount >= 20)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[4].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 30 && energyCount >= 25)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[5].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 35 && energyCount >= 30)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[6].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 40 && energyCount >= 35)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[7].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 45 && energyCount >= 40)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[8].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 50 && energyCount >= 45)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[9].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 55 && energyCount >= 50)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[10].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 60 && energyCount >= 55)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[11].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 65 && energyCount >= 60)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[12].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 70 && energyCount >= 65)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[13].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 75 && energyCount >= 70)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[14].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 80 && energyCount >= 75)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[15].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 85 && energyCount >= 80)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[16].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 90 && energyCount >= 85)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[17].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 95 && energyCount >= 90)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[18].gameObject.SetActive(true);
-
-        }
-        if (energyCount < 100 && energyCount >= 95)
-        {
-            for (int i = 0; i < energycountPNG.Length; i++)
-            {
-                energycountPNG[i].gameObject.SetActive(false);
-            }
-            energycountPNG[19].gameObject.SetActive(true);
-
-        }
+        
 
 
-        if (lernCount == 0)
-        {
-                lerncountPNG[0].gameObject.SetActive(true);
-                lerncountPNG[1].gameObject.SetActive(false);
-                lerncountPNG[2].gameObject.SetActive(false);
-                lerncountPNG[3].gameObject.SetActive(false);
-                lerncountPNG[4].gameObject.SetActive(false);
-                lerncountPNG[5].gameObject.SetActive(false);
-                lerncountPNG[6].gameObject.SetActive(false);
-                lerncountPNG[7].gameObject.SetActive(false);
-                lerncountPNG[8].gameObject.SetActive(false);
-                lerncountPNG[9].gameObject.SetActive(false);
-                lerncountPNG[10].gameObject.SetActive(false);
-          
-        }
-        if (lernCount == 1)
-        {
-            lerncountPNG[1].gameObject.SetActive(true);
-            lerncountPNG[0].gameObject.SetActive(false);
-            lerncountPNG[2].gameObject.SetActive(false);
-            lerncountPNG[3].gameObject.SetActive(false);
-            lerncountPNG[4].gameObject.SetActive(false);
-            lerncountPNG[5].gameObject.SetActive(false);
-            lerncountPNG[6].gameObject.SetActive(false);
-            lerncountPNG[7].gameObject.SetActive(false);
-            lerncountPNG[8].gameObject.SetActive(false);
-            lerncountPNG[9].gameObject.SetActive(false);
-            lerncountPNG[10].gameObject.SetActive(false);
-
-        }
-        if (lernCount == 2)
-        {
-            lerncountPNG[2].gameObject.SetActive(true);
-            lerncountPNG[1].gameObject.SetActive(false);
-            lerncountPNG[0].gameObject.SetActive(false);
-            lerncountPNG[3].gameObject.SetActive(false);
-            lerncountPNG[4].gameObject.SetActive(false);
-            lerncountPNG[5].gameObject.SetActive(false);
-            lerncountPNG[6].gameObject.SetActive(false);
-            lerncountPNG[7].gameObject.SetActive(false);
-            lerncountPNG[8].gameObject.SetActive(false);
-            lerncountPNG[9].gameObject.SetActive(false);
-            lerncountPNG[10].gameObject.SetActive(false);
-
-        }
-        if (lernCount == 3)
-        {
-            lerncountPNG[3].gameObject.SetActive(true);
-            lerncountPNG[1].gameObject.SetActive(false);
-            lerncountPNG[2].gameObject.SetActive(false);
-            lerncountPNG[0].gameObject.SetActive(false);
-            lerncountPNG[4].gameObject.SetActive(false);
-            lerncountPNG[5].gameObject.SetActive(false);
-            lerncountPNG[6].gameObject.SetActive(false);
-            lerncountPNG[7].gameObject.SetActive(false);
-            lerncountPNG[8].gameObject.SetActive(false);
-            lerncountPNG[9].gameObject.SetActive(false);
-            lerncountPNG[10].gameObject.SetActive(false);
-
-        }
-        if (lernCount == 4)
-        {
-            lerncountPNG[4].gameObject.SetActive(true);
-            lerncountPNG[1].gameObject.SetActive(false);
-            lerncountPNG[2].gameObject.SetActive(false);
-            lerncountPNG[3].gameObject.SetActive(false);
-            lerncountPNG[0].gameObject.SetActive(false);
-            lerncountPNG[5].gameObject.SetActive(false);
-            lerncountPNG[6].gameObject.SetActive(false);
-            lerncountPNG[7].gameObject.SetActive(false);
-            lerncountPNG[8].gameObject.SetActive(false);
-            lerncountPNG[9].gameObject.SetActive(false);
-            lerncountPNG[10].gameObject.SetActive(false);
-
-        }
-        if (lernCount == 5)
-        {
-            lerncountPNG[5].gameObject.SetActive(true);
-            lerncountPNG[1].gameObject.SetActive(false);
-            lerncountPNG[2].gameObject.SetActive(false);
-            lerncountPNG[3].gameObject.SetActive(false);
-            lerncountPNG[4].gameObject.SetActive(false);
-            lerncountPNG[0].gameObject.SetActive(false);
-            lerncountPNG[6].gameObject.SetActive(false);
-            lerncountPNG[7].gameObject.SetActive(false);
-            lerncountPNG[8].gameObject.SetActive(false);
-            lerncountPNG[9].gameObject.SetActive(false);
-            lerncountPNG[10].gameObject.SetActive(false);
-
-        }
-        if (lernCount == 6)
-        {
-            lerncountPNG[6].gameObject.SetActive(true);
-            lerncountPNG[1].gameObject.SetActive(false);
-            lerncountPNG[2].gameObject.SetActive(false);
-            lerncountPNG[3].gameObject.SetActive(false);
-            lerncountPNG[4].gameObject.SetActive(false);
-            lerncountPNG[5].gameObject.SetActive(false);
-            lerncountPNG[0].gameObject.SetActive(false);
-            lerncountPNG[7].gameObject.SetActive(false);
-            lerncountPNG[8].gameObject.SetActive(false);
-            lerncountPNG[9].gameObject.SetActive(false);
-            lerncountPNG[10].gameObject.SetActive(false);
-
-        }
-        if (lernCount == 7)
-        {
-            lerncountPNG[7].gameObject.SetActive(true);
-            lerncountPNG[1].gameObject.SetActive(false);
-            lerncountPNG[2].gameObject.SetActive(false);
-            lerncountPNG[3].gameObject.SetActive(false);
-            lerncountPNG[4].gameObject.SetActive(false);
-            lerncountPNG[5].gameObject.SetActive(false);
-            lerncountPNG[6].gameObject.SetActive(false);
-            lerncountPNG[0].gameObject.SetActive(false);
-            lerncountPNG[8].gameObject.SetActive(false);
-            lerncountPNG[9].gameObject.SetActive(false);
-            lerncountPNG[10].gameObject.SetActive(false);
-
-        }
-        if (lernCount == 8)
-        {
-            lerncountPNG[8].gameObject.SetActive(true);
-            lerncountPNG[1].gameObject.SetActive(false);
-            lerncountPNG[2].gameObject.SetActive(false);
-            lerncountPNG[3].gameObject.SetActive(false);
-            lerncountPNG[4].gameObject.SetActive(false);
-            lerncountPNG[5].gameObject.SetActive(false);
-            lerncountPNG[6].gameObject.SetActive(false);
-            lerncountPNG[7].gameObject.SetActive(false);
-            lerncountPNG[0].gameObject.SetActive(false);
-            lerncountPNG[9].gameObject.SetActive(false);
-            lerncountPNG[10].gameObject.SetActive(false);
-
-        }
-        if (lernCount == 9)
-        {
-            lerncountPNG[9].gameObject.SetActive(true);
-            lerncountPNG[1].gameObject.SetActive(false);
-            lerncountPNG[2].gameObject.SetActive(false);
-            lerncountPNG[3].gameObject.SetActive(false);
-            lerncountPNG[4].gameObject.SetActive(false);
-            lerncountPNG[5].gameObject.SetActive(false);
-            lerncountPNG[6].gameObject.SetActive(false);
-            lerncountPNG[7].gameObject.SetActive(false);
-            lerncountPNG[8].gameObject.SetActive(false);
-            lerncountPNG[0].gameObject.SetActive(false);
-            lerncountPNG[10].gameObject.SetActive(false);
-
-        }
-        if (lernCount == 10)
-        {
-            lerncountPNG[10].gameObject.SetActive(true);
-            lerncountPNG[1].gameObject.SetActive(false);
-            lerncountPNG[2].gameObject.SetActive(false);
-            lerncountPNG[3].gameObject.SetActive(false);
-            lerncountPNG[4].gameObject.SetActive(false);
-            lerncountPNG[5].gameObject.SetActive(false);
-            lerncountPNG[6].gameObject.SetActive(false);
-            lerncountPNG[7].gameObject.SetActive(false);
-            lerncountPNG[8].gameObject.SetActive(false);
-            lerncountPNG[9].gameObject.SetActive(false);
-            lerncountPNG[0].gameObject.SetActive(false);
-
-        }
     }
     public void SchlafenKurz()
     {
@@ -427,6 +87,268 @@ public class CountScript : MonoBehaviour
     {
         energyCount -= 10;
         PlayerPrefs.SetInt("energyCount", energyCount);
+        for (int i = 0; i < energycountPNG.Length; i++)
+        {
+            energycountPNG[i].gameObject.SetActive(false);
+        }
+        if (energyCount == 0)
+        {
+            energycountPNG[0].gameObject.SetActive(true);
+        }
+        if (energyCount < 5 && energyCount > 0)
+        {
+
+            energycountPNG[1].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 10 && energyCount >= 5)
+        {
+
+            energycountPNG[2].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 15 && energyCount >= 10)
+        {
+
+            energycountPNG[3].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 20 && energyCount >= 15)
+        {
+
+            energycountPNG[4].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 25 && energyCount >= 20)
+        {
+
+            energycountPNG[5].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 30 && energyCount >= 25)
+        {
+
+            energycountPNG[6].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 35 && energyCount >= 30)
+        {
+
+            energycountPNG[7].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 40 && energyCount >= 35)
+        {
+
+            energycountPNG[8].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 45 && energyCount >= 40)
+        {
+
+            energycountPNG[9].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 50 && energyCount >= 45)
+        {
+
+            energycountPNG[10].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 55 && energyCount >= 50)
+        {
+
+            energycountPNG[11].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 60 && energyCount >= 55)
+        {
+
+            energycountPNG[12].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 65 && energyCount >= 60)
+        {
+
+            energycountPNG[13].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 70 && energyCount >= 65)
+        {
+
+            energycountPNG[14].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 75 && energyCount >= 70)
+        {
+
+            energycountPNG[15].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 80 && energyCount >= 75)
+        {
+
+            energycountPNG[16].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 85 && energyCount >= 80)
+        {
+
+            energycountPNG[17].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 90 && energyCount >= 85)
+        {
+
+            energycountPNG[18].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 95 && energyCount >= 90)
+        {
+
+            energycountPNG[19].gameObject.SetActive(true);
+
+        }
+        if (energyCount < 100 && energyCount >= 95)
+        {
+
+            energycountPNG[20].gameObject.SetActive(true);
+
+        }
+
+        for (int i = 0; i < lerncountPNG.Length; i++)
+        {
+            lerncountPNG[i].gameObject.SetActive(false);
+        }
+        if (lernCount == 0)
+        {
+            lerncountPNG[0].gameObject.SetActive(true);
+
+
+        }
+        if (lernCount == 1)
+        {
+            lerncountPNG[1].gameObject.SetActive(true);
+
+
+        }
+        if (lernCount == 2)
+        {
+            lerncountPNG[2].gameObject.SetActive(true);
+
+
+        }
+        if (lernCount == 3)
+        {
+            lerncountPNG[3].gameObject.SetActive(true);
+
+
+        }
+        if (lernCount == 4)
+        {
+            lerncountPNG[4].gameObject.SetActive(true);
+
+        }
+        if (lernCount == 5)
+        {
+            lerncountPNG[5].gameObject.SetActive(true);
+
+
+        }
+        if (lernCount == 6)
+        {
+            lerncountPNG[6].gameObject.SetActive(true);
+
+
+        }
+        if (lernCount == 7)
+        {
+            lerncountPNG[7].gameObject.SetActive(true);
+
+
+        }
+        if (lernCount == 8)
+        {
+            lerncountPNG[8].gameObject.SetActive(true);
+
+
+        }
+        if (lernCount == 9)
+        {
+            lerncountPNG[9].gameObject.SetActive(true);
+
+
+        }
+        if (lernCount == 10)
+        {
+            lerncountPNG[10].gameObject.SetActive(true);
+
+
+        }
+        for (int i = 0; i < geldCountPNG.Length; i++)
+        {
+            geldCountPNG[i].gameObject.SetActive(false);
+        }
+        if (geldCount == 1)
+        {
+            geldCountPNG[1].gameObject.SetActive(true);
+
+
+        }
+        if (geldCount == 2)
+        {
+            geldCountPNG[2].gameObject.SetActive(true);
+
+
+        }
+        if (geldCount == 3)
+        {
+            geldCountPNG[3].gameObject.SetActive(true);
+
+
+        }
+        if (geldCount == 4)
+        {
+            geldCountPNG[4].gameObject.SetActive(true);
+
+        }
+        if (geldCount == 5)
+        {
+            geldCountPNG[5].gameObject.SetActive(true);
+
+
+        }
+        if (geldCount == 6)
+        {
+            geldCountPNG[6].gameObject.SetActive(true);
+
+
+        }
+        if (geldCount == 7)
+        {
+            geldCountPNG[7].gameObject.SetActive(true);
+
+
+        }
+        if (geldCount == 8)
+        {
+            geldCountPNG[8].gameObject.SetActive(true);
+
+
+        }
+        if (geldCount == 9)
+        {
+            geldCountPNG[9].gameObject.SetActive(true);
+
+
+        }
+        if (lernCount == 10)
+        {
+            geldCountPNG[10].gameObject.SetActive(true);
+
+
+        }
+
         Invoke("LoadScene", 2.0f);
 
     }
