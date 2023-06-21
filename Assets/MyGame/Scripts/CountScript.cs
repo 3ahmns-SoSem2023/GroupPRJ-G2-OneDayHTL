@@ -27,7 +27,8 @@ public class CountScript : MonoBehaviour
         loadScene = GetComponent<LoadScene>();
         Debug.Log("Geld:" + geldCount);
         Debug.Log("Lern:" + lernCount);
-        Debug.Log("Energie:" + energyCount);
+        Debug.Log("Energie01:" + energyCount);
+        SetEnergyCount();
     }
 
     // Update is called once per frame
@@ -87,6 +88,18 @@ public class CountScript : MonoBehaviour
     {
         energyCount -= 10;
         PlayerPrefs.SetInt("energyCount", energyCount);
+        Debug.Log("Localenergy" + energyCount);
+        
+
+        Invoke("LoadScene", 2.0f);
+
+    }
+    public void LoadScene()
+    {
+        loadScene.NewScene();
+    }
+    public void SetEnergyCount()
+    {
         for (int i = 0; i < energycountPNG.Length; i++)
         {
             energycountPNG[i].gameObject.SetActive(false);
@@ -95,125 +108,125 @@ public class CountScript : MonoBehaviour
         {
             energycountPNG[0].gameObject.SetActive(true);
         }
-        if (energyCount < 5 && energyCount > 0)
+        else if (energyCount < 5 && energyCount > 0)
         {
 
             energycountPNG[1].gameObject.SetActive(true);
 
         }
-        if (energyCount < 10 && energyCount >= 5)
+        else if (energyCount < 10 && energyCount >= 5)
         {
 
             energycountPNG[2].gameObject.SetActive(true);
 
         }
-        if (energyCount < 15 && energyCount >= 10)
+        else if (energyCount < 15 && energyCount >= 10)
         {
 
             energycountPNG[3].gameObject.SetActive(true);
 
         }
-        if (energyCount < 20 && energyCount >= 15)
+        else if (energyCount < 20 && energyCount >= 15)
         {
 
             energycountPNG[4].gameObject.SetActive(true);
 
         }
-        if (energyCount < 25 && energyCount >= 20)
+        else if (energyCount < 25 && energyCount >= 20)
         {
 
             energycountPNG[5].gameObject.SetActive(true);
 
         }
-        if (energyCount < 30 && energyCount >= 25)
+        else if (energyCount < 30 && energyCount >= 25)
         {
 
             energycountPNG[6].gameObject.SetActive(true);
 
         }
-        if (energyCount < 35 && energyCount >= 30)
+        else if (energyCount < 35 && energyCount >= 30)
         {
 
             energycountPNG[7].gameObject.SetActive(true);
 
         }
-        if (energyCount < 40 && energyCount >= 35)
+        else if (energyCount < 40 && energyCount >= 35)
         {
 
             energycountPNG[8].gameObject.SetActive(true);
 
         }
-        if (energyCount < 45 && energyCount >= 40)
+        else if (energyCount < 45 && energyCount >= 40)
         {
 
             energycountPNG[9].gameObject.SetActive(true);
 
         }
-        if (energyCount < 50 && energyCount >= 45)
+        else if (energyCount < 50 && energyCount >= 45)
         {
 
             energycountPNG[10].gameObject.SetActive(true);
 
         }
-        if (energyCount < 55 && energyCount >= 50)
+        else if (energyCount < 55 && energyCount >= 50)
         {
 
             energycountPNG[11].gameObject.SetActive(true);
 
         }
-        if (energyCount < 60 && energyCount >= 55)
+        else if (energyCount < 60 && energyCount >= 55)
         {
 
             energycountPNG[12].gameObject.SetActive(true);
 
         }
-        if (energyCount < 65 && energyCount >= 60)
+        else if (energyCount < 65 && energyCount >= 60)
         {
 
             energycountPNG[13].gameObject.SetActive(true);
 
         }
-        if (energyCount < 70 && energyCount >= 65)
+        else if (energyCount < 70 && energyCount >= 65)
         {
 
             energycountPNG[14].gameObject.SetActive(true);
 
         }
-        if (energyCount < 75 && energyCount >= 70)
+        else if (energyCount < 75 && energyCount >= 70)
         {
 
             energycountPNG[15].gameObject.SetActive(true);
 
         }
-        if (energyCount < 80 && energyCount >= 75)
+        else if (energyCount < 80 && energyCount >= 75)
         {
 
             energycountPNG[16].gameObject.SetActive(true);
 
         }
-        if (energyCount < 85 && energyCount >= 80)
+        else if (energyCount < 85 && energyCount >= 80)
         {
 
             energycountPNG[17].gameObject.SetActive(true);
 
         }
-        if (energyCount < 90 && energyCount >= 85)
+        else if (energyCount < 90 && energyCount >= 85)
         {
 
             energycountPNG[18].gameObject.SetActive(true);
 
         }
-        if (energyCount < 95 && energyCount >= 90)
+        else if (energyCount < 95 && energyCount >= 90)
         {
 
             energycountPNG[19].gameObject.SetActive(true);
 
         }
-        if (energyCount < 100 && energyCount >= 95)
+        else if (energyCount >= 95)
         {
 
             energycountPNG[20].gameObject.SetActive(true);
-
+            Debug.Log("energy High");
         }
 
         for (int i = 0; i < lerncountPNG.Length; i++)
@@ -348,13 +361,6 @@ public class CountScript : MonoBehaviour
 
 
         }
-
-        Invoke("LoadScene", 2.0f);
-
-    }
-    public void LoadScene()
-    {
-        loadScene.NewScene();
     }
 
 }

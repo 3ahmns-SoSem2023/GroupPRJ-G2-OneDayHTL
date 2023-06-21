@@ -22,10 +22,13 @@ public class CoutScript02 : MonoBehaviour
         geldCount = PlayerPrefs.GetInt("geldCount", 0); 
         lernCount = PlayerPrefs.GetInt("lernCount", 0);
         energyCount = PlayerPrefs.GetInt("energyCount", 0);
+        Debug.Log(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        Debug.Log(energyCount);
         loadScene = GetComponent<LoadScene>();
         Debug.Log("Geld:" + geldCount);
         Debug.Log("Lern:" + lernCount);
-        Debug.Log("Energie:" + energyCount);
+        Debug.Log("Energie02:" + energyCount);
+        SetEnergyCount();
 
     }
 
@@ -78,13 +81,29 @@ public class CoutScript02 : MonoBehaviour
     {
         geldCount++;
         energyCount -= 15;
+        lernCount++;
         PlayerPrefs.SetInt("energyCount", energyCount);
         PlayerPrefs.SetInt("geldCount", geldCount);
+        PlayerPrefs.SetInt("lernCount", lernCount);
     }
     public void JedeEntscheidung()
     {
         energyCount -= 10;
         PlayerPrefs.SetInt("energyCount", energyCount);
+        
+
+
+        Invoke("LoadScene", 2.0f);
+        Debug.Log("++++++++++++++++++++++++++++++++++++"+gameObject.name);
+        yes.interactable = false;
+        no.interactable = false;
+    }
+    public void LoadScene()
+    {
+        loadScene.NewScene();
+    }
+    public void SetEnergyCount()
+    {
         for (int i = 0; i < energycountPNG.Length; i++)
         {
             energycountPNG[i].gameObject.SetActive(false);
@@ -93,125 +112,125 @@ public class CoutScript02 : MonoBehaviour
         {
             energycountPNG[0].gameObject.SetActive(true);
         }
-        if (energyCount < 5 && energyCount>0)
+        else if (energyCount < 5 && energyCount > 0)
         {
-           
+
             energycountPNG[1].gameObject.SetActive(true);
 
         }
-        if (energyCount < 10 && energyCount >= 5)
+        else if (energyCount < 10 && energyCount >= 5)
         {
-            
+
             energycountPNG[2].gameObject.SetActive(true);
 
         }
-        if (energyCount < 15 && energyCount >= 10)
+        else if (energyCount < 15 && energyCount >= 10)
         {
-            
+
             energycountPNG[3].gameObject.SetActive(true);
 
         }
-        if (energyCount < 20 && energyCount >= 15)
+        else if (energyCount < 20 && energyCount >= 15)
         {
-           
+
             energycountPNG[4].gameObject.SetActive(true);
 
         }
-        if (energyCount < 25 && energyCount >= 20)
+        else if (energyCount < 25 && energyCount >= 20)
         {
-           
+
             energycountPNG[5].gameObject.SetActive(true);
 
         }
-        if (energyCount < 30 && energyCount >= 25)
+        else if (energyCount < 30 && energyCount >= 25)
         {
-            
+
             energycountPNG[6].gameObject.SetActive(true);
 
         }
-        if (energyCount < 35 && energyCount >= 30)
+        else if (energyCount < 35 && energyCount >= 30)
         {
-            
+
             energycountPNG[7].gameObject.SetActive(true);
 
         }
-        if (energyCount < 40 && energyCount >= 35)
+        else if (energyCount < 40 && energyCount >= 35)
         {
-            
+
             energycountPNG[8].gameObject.SetActive(true);
 
         }
-        if (energyCount < 45 && energyCount >= 40)
+        else if (energyCount < 45 && energyCount >= 40)
         {
-           
+
             energycountPNG[9].gameObject.SetActive(true);
 
         }
-        if (energyCount < 50 && energyCount >= 45)
+        else if (energyCount < 50 && energyCount >= 45)
         {
-            
+
             energycountPNG[10].gameObject.SetActive(true);
 
         }
-        if (energyCount < 55 && energyCount >= 50)
+        else if (energyCount < 55 && energyCount >= 50)
         {
-            
+
             energycountPNG[11].gameObject.SetActive(true);
 
         }
-        if (energyCount < 60 && energyCount >= 55)
+        else if (energyCount < 60 && energyCount >= 55)
         {
-            
+
             energycountPNG[12].gameObject.SetActive(true);
 
         }
-        if (energyCount < 65 && energyCount >= 60)
+        else if (energyCount < 65 && energyCount >= 60)
         {
-            
+
             energycountPNG[13].gameObject.SetActive(true);
 
         }
-        if (energyCount < 70 && energyCount >= 65)
+        else if (energyCount < 70 && energyCount >= 65)
         {
-            
+
             energycountPNG[14].gameObject.SetActive(true);
 
         }
-        if (energyCount < 75 && energyCount >= 70)
+        else if (energyCount < 75 && energyCount >= 70)
         {
-            
+
             energycountPNG[15].gameObject.SetActive(true);
 
         }
-        if (energyCount < 80 && energyCount >= 75)
+        else if (energyCount < 80 && energyCount >= 75)
         {
-            
+
             energycountPNG[16].gameObject.SetActive(true);
 
         }
-        if (energyCount < 85 && energyCount >= 80)
+        else if (energyCount < 85 && energyCount >= 80)
         {
-            
+
             energycountPNG[17].gameObject.SetActive(true);
 
         }
-        if (energyCount < 90 && energyCount >= 85)
+        else if (energyCount < 90 && energyCount >= 85)
         {
-            
+
             energycountPNG[18].gameObject.SetActive(true);
 
         }
-        if (energyCount < 95 && energyCount >= 90)
+        else if (energyCount < 95 && energyCount >= 90)
         {
-            
+
             energycountPNG[19].gameObject.SetActive(true);
 
         }
-        if (energyCount < 100 && energyCount >= 95)
+        else if (energyCount >= 95)
         {
-            
-            energycountPNG[20].gameObject.SetActive(true);
 
+            energycountPNG[20].gameObject.SetActive(true);
+            Debug.Log("energy High");
         }
 
         for (int i = 0; i < lerncountPNG.Length; i++)
@@ -221,66 +240,66 @@ public class CoutScript02 : MonoBehaviour
         if (lernCount == 0)
         {
             lerncountPNG[0].gameObject.SetActive(true);
-       
+
 
         }
-        if (lernCount == 1)
+        else if (lernCount == 1)
         {
             lerncountPNG[1].gameObject.SetActive(true);
 
 
         }
-        if (lernCount == 2)
+        else if (lernCount == 2)
         {
             lerncountPNG[2].gameObject.SetActive(true);
-          
+
 
         }
-        if (lernCount == 3)
+        else if (lernCount == 3)
         {
             lerncountPNG[3].gameObject.SetActive(true);
-       
+
 
         }
-        if (lernCount == 4)
+        else if (lernCount == 4)
         {
             lerncountPNG[4].gameObject.SetActive(true);
-       
+
         }
-        if (lernCount == 5)
+        else if (lernCount == 5)
         {
             lerncountPNG[5].gameObject.SetActive(true);
-          
+
 
         }
-        if (lernCount == 6)
+        else if (lernCount == 6)
         {
             lerncountPNG[6].gameObject.SetActive(true);
-          
+
 
         }
-        if (lernCount == 7)
+        else if (lernCount == 7)
         {
             lerncountPNG[7].gameObject.SetActive(true);
-            
+
 
         }
-        if (lernCount == 8)
+        else if (lernCount == 8)
         {
             lerncountPNG[8].gameObject.SetActive(true);
-            
+
 
         }
-        if (lernCount == 9)
+        else if (lernCount == 9)
         {
             lerncountPNG[9].gameObject.SetActive(true);
-            
+
 
         }
-        if (lernCount == 10)
+        else if (lernCount == 10)
         {
             lerncountPNG[10].gameObject.SetActive(true);
-            
+
 
         }
         for (int i = 0; i < geldCountPNG.Length; i++)
@@ -293,69 +312,59 @@ public class CoutScript02 : MonoBehaviour
 
 
         }
-        if (geldCount == 2)
+        else if (geldCount == 2)
         {
             geldCountPNG[2].gameObject.SetActive(true);
 
 
         }
-        if (geldCount == 3)
+        else if (geldCount == 3)
         {
             geldCountPNG[3].gameObject.SetActive(true);
 
 
         }
-        if (geldCount == 4)
+        else if (geldCount == 4)
         {
             geldCountPNG[4].gameObject.SetActive(true);
 
         }
-        if (geldCount == 5)
+        else if (geldCount == 5)
         {
             geldCountPNG[5].gameObject.SetActive(true);
 
 
         }
-        if (geldCount == 6)
+        else if (geldCount == 6)
         {
             geldCountPNG[6].gameObject.SetActive(true);
 
 
         }
-        if (geldCount == 7)
+        else if (geldCount == 7)
         {
             geldCountPNG[7].gameObject.SetActive(true);
 
 
         }
-        if (geldCount == 8)
+        else if (geldCount == 8)
         {
             geldCountPNG[8].gameObject.SetActive(true);
 
 
         }
-        if (geldCount == 9)
+        else if (geldCount == 9)
         {
             geldCountPNG[9].gameObject.SetActive(true);
 
 
         }
-        if (lernCount == 10)
+        else if (lernCount == 10)
         {
             geldCountPNG[10].gameObject.SetActive(true);
 
 
         }
-
-
-        Invoke("LoadScene", 2.0f);
-        Debug.Log("++++++++++++++++++++++++++++++++++++"+gameObject.name);
-        yes.interactable = false;
-        no.interactable = false;
-    }
-    public void LoadScene()
-    {
-        loadScene.NewScene();
     }
 
 }
