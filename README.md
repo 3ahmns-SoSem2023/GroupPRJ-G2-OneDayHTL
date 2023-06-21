@@ -33,3 +33,15 @@ Tagesziele:
  	  Szenen erstellen & jeweilige Buttons erstellen
   David:
 	  Countscript
+
+# Lessons Learned:
++ Mathias: Sound design
++ Mario: Photoshop AI
++ Henrik: Einfügen Sound in Unity, Dont Destroy / Load , Ui
++ David: Scene Managment, Player Prefs
++ Jakob: Illustrater/Photoshop
+
+# Probleme:
++ Richtige Darstellung der Counts
++ Merge errors
++ Veränderungen bzw richtiges Speichern der Counts
