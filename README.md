@@ -1,8 +1,7 @@
-# G2-HTLTag
+# G2-HTLTag Arbeitstitel: HTL-Week
 
-Workingtitle: HTL-Week
-Short description: Man hat jeden Tag verschidene Entscheidungen zutreffen die den Lerncount deine Energie oder dein Geld beeinflussen. 
-Am ende der Woche hat man eine Schularbeit welche man je nach Lerncount und Energie mit verschidenen Noten abgesclossen.
+ Du hast jeden Tag verschiedene Entscheidungen zu treffen, die deinen Lernfortschritt, deine Energie oder dein Geld beeinflussen. 
+ Am Ende der Woche hast du eine Schularbeit, die du je nach Lernfortschritt und Energie mit verschiedenen Noten abschließt.
 
 + Teammembers: Mathias, David, Mario, Jakob, Henrik,
 + Developmentplattform: Unity 2020.3.18f1, Visual Studio, Mac, Win10; Win11;
